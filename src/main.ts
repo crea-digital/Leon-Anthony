@@ -20,39 +20,69 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelector('.carousel-slides') as HTMLElement;
     const prevButton = document.querySelector('.carousel-prev') as HTMLElement;
     const nextButton = document.querySelector('.carousel-next') as HTMLElement;
-    const dots = document.querySelectorAll('.carousel-dot');
+    const dotsContainer = document.querySelector('.carousel-dots') as HTMLElement;
 
-    if (slides && prevButton && nextButton && dots.length > 0) {
+    if (slides && prevButton && nextButton && dotsContainer) {
         let currentIndex = 0;
         const slideCount = slides.children.length;
+        let slideInterval: number;
+
+        // Générer les points de navigation
+        for (let i = 0; i < slideCount; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('carousel-dot');
+            dot.addEventListener('click', () => {
+                goToSlide(i);
+            });
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
 
         const updateCarousel = () => {
-            if (slides) {
-                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentIndex);
-                });
-            }
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        };
+
+        const goToSlide = (index: number) => {
+            currentIndex = index;
+            updateCarousel();
+            resetInterval();
+        };
+
+        const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            updateCarousel();
+        };
+
+        const prevSlide = () => {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            updateCarousel();
+        };
+
+        const startInterval = () => {
+            slideInterval = window.setInterval(nextSlide, 3000); // Défilement toutes les 3 secondes
+        };
+
+        const resetInterval = () => {
+            clearInterval(slideInterval);
+            startInterval();
         };
 
         nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % slideCount;
-            updateCarousel();
+            nextSlide();
+            resetInterval();
         });
 
         prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-            updateCarousel();
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                updateCarousel();
-            });
+            prevSlide();
+            resetInterval();
         });
 
         updateCarousel();
+        startInterval();
     }
 
     // Image Zoom & Lightbox
