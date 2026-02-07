@@ -22,34 +22,53 @@
     </header>
 
     <main>
-        <section id="contact-form" class="fade-in-section">
+        <section class="hero fade-in-section">
             <div class="container">
-                <h2>Contactez-nous</h2>
-                <p style="text-align: center; max-width: 600px; margin: 0 auto 60px auto;">Pour toute question ou pour planifier une consultation privée à notre bureau de Genève, veuillez remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
-                <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
-                    <div style="margin-bottom: 20px;">
-                        <label for="name" style="display: block; margin-bottom: 5px; font-weight: 500;">Nom Complet</label>
-                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #CCC; border-radius: 5px;">
+                <h1>Entrer en Contact</h1>
+                <p>Notre équipe est à votre disposition pour toute demande d'information ou de consultation.</p>
+            </div>
+        </section>
+
+        <section id="contact-main" class="fade-in-section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="contact-form-container">
+                        <h3>Envoyer un Message</h3>
+                        <form id="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Nom Complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Envoyer le Message</button>
+                        </form>
+                        <p id="form-feedback"></p>
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="email" style="display: block; margin-bottom: 5px; font-weight: 500;">Adresse Email</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #CCC; border-radius: 5px;">
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        <p><strong>Bureau de Genève</strong></p>
+                        <p>Quai du Mont-Blanc, 1201 Genève, Suisse</p>
+                        <p><strong>Email :</strong> contact@lignumsteel.ch</p>
+                        <p><strong>Téléphone :</strong> +41 22 123 45 67</p>
+                        <div class="map-container">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.579422037754!2d6.14224931558917!3d46.20439097911678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c654b4c73b6a1%3A0x95d3f7e1b5d1b7b1!2sQuai%20du%20Mont-Blanc%2C%201201%20Gen%C3%A8ve%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1620835158882!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="message" style="display: block; margin-bottom: 5px; font-weight: 500;">Message</label>
-                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; border: 1px solid #CCC; border-radius: 5px;"></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Envoyer le Message</button>
-                </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
+    <footer id="contact-footer">
         <div class="container">
-            <h2>Devenez Client Lignum Steel</h2>
-            <p>Nos produits sont des investissements. Contactez notre bureau de Genève pour une consultation sur mesure.</p>
-            <p style="margin-top: 20px; font-weight: 700;">contact@lignumsteel.ch | +41 22 123 45 67</p>
+            <p>&copy; 2024 Lignum Steel. Tous droits réservés.</p>
         </div>
     </footer>
 
