@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lignum Steel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">LIGNUM STEEL</div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="philosophie.html">Philosophie</a>
+                <a href="materiaux.html">Matériaux</a>
+                <a href="produit.html">Produit</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero fade-in-section">
+            <div class="container">
+                <h1>Entrer en Contact</h1>
+                <p>Notre équipe est à votre disposition pour toute demande d'information ou de consultation.</p>
+            </div>
+        </section>
+
+        <section id="contact-main" class="fade-in-section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="contact-form-container">
+                        <h3>Envoyer un Message</h3>
+                        <form id="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Nom Complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Envoyer le Message</button>
+                        </form>
+                        <p id="form-feedback"></p>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        <p><strong>Bureau de Genève</strong></p>
+                        <p>Quai du Mont-Blanc, 1201 Genève, Suisse</p>
+                        <p><strong>Email :</strong> contact@lignumsteel.ch</p>
+                        <p><strong>Téléphone :</strong> +41 22 123 45 67</p>
+                        <div class="map-container">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.579422037754!2d6.14224931558917!3d46.20439097911678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c654b4c73b6a1%3A0x95d3f7e1b5d1b7b1!2sQuai%20du%20Mont-Blanc%2C%201201%20Gen%C3%A8ve%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1620835158882!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact-footer">
+        <div class="container">
+            <p>&copy; 2024 Lignum Steel. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
