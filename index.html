@@ -1,45 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lignum Steel - Quality Steel Products for Your Needs">
-    <meta name="keywords" content="Steel, Construction, Quality, Lignum Steel">
-    <title>Lignum Steel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Lignum Steel - L'Investissement Pérenne</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Lignum Steel</h1>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">LIGNUM STEEL</div>
+            <nav>
+                <a href="#philosophie">Philosophie</a>
+                <a href="#materiaux">Matériaux</a>
+                <a href="#produit">Produit</a>
+                <a href="#contact">Consultation</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="about" tabindex="0">
-            <h2>About Lignum Steel</h2>
-            <p>Your trusted partner for high-quality steel products.</p>
+        <section class="hero">
+            <div class="container">
+                <h1>L'alliance de l'âme et de la structure.</h1>
+                <p>Investissez dans un mobilier qui allie la chaleur du bois suisse à la rigueur de l'acier international.</p>
+            </div>
         </section>
-        <section id="products" tabindex="0">
-            <h2>Our Products</h2>
-            <ul>
-                <li>Steel Beams</li>
-                <li>Steel Plates</li>
-                <li>Custom Fabrication</li>
-            </ul>
+
+        <section id="philosophie" class="fade-in-section">
+            <div class="container">
+                <h2>Philosophie du Design</h2>
+                <div class="grid-2">
+                    <div class="text-block">
+                        <h3>L'Épure : Moins est Plus</h3>
+                        <p>Notre design est une quête de l'essentiel. Chaque composant a une raison d'être, chaque ligne sert une fonction. L'absence d'ornement superflu concentre l'attention sur la pureté des matériaux et la précision de l'assemblage. C'est un design qui ne se démode pas, car il est fondé sur la nécessité structurelle.</p>
+                    </div>
+                    <div class="image-placeholder">VISUEL 1 : Vue d'ensemble sobre d'un bureau</div>
+                </div>
+            </div>
         </section>
-        <section id="contact" tabindex="0">
-            <h2>Contact Us</h2>
-            <p>For inquiries, contact us at <a href="mailto:info@lignumsteel.com">info@lignumsteel.com</a>.</p>
+
+        <section id="materiaux" class="fade-in-section">
+            <div class="container">
+                <h2>Sourcing et Matériaux</h2>
+                <div class="grid-2">
+                    <div class="image-placeholder">VISUEL 2 : Gros plan sur la texture du bois</div>
+                    <div class="text-block">
+                        <h3>Le Bois : Chêne Suisse</h3>
+                        <p>Nous utilisons exclusivement du chêne provenant de forêts suisses gérées durablement. Ce bois est sélectionné pour sa stabilité thermique et sa résistance mécanique. Son sourcing local garantit une empreinte carbone minimale et une traçabilité irréprochable.</p>
+                    </div>
+                </div>
+                 <div class="grid-2" style="margin-top: 80px;">
+                    <div class="text-block">
+                        <h3>L'Acier : Haute Résilience</h3>
+                        <p>La structure est composée d'acier A572 américain et d'alliages asiatiques, choisis pour leur haute limite élastique et leurs propriétés antisismiques. Cet acier n'est pas seulement un support, c'est une garantie de durabilité et de sécurité structurelle pour des décennies.</p>
+                    </div>
+                    <div class="image-placeholder">VISUEL 3 : Détail d'une jonction acier</div>
+                </div>
+            </div>
         </section>
+
+        <section id="produit" class="fade-in-section">
+            <div class="container">
+                <h2>Le Bureau "Helvética"</h2>
+                <div class="grid-2">
+                    <div class="produit-info">
+                        <h3>Un Investissement pour la Vie</h3>
+                        <p>Le bureau Helvética est le manifeste de Lignum Steel. Il est conçu non comme un meuble, mais comme un partenaire de travail pour les décennies à venir.</p>
+                        <ul>
+                            <li>Plateau de 40mm en chêne suisse massif.</li>
+                            <li>Structure porteuse en acier A572.</li>
+                            <li>Points de jonction usinés avec une tolérance de 0.1mm.</li>
+                            <li>Finition à l'huile naturelle, sans composés organiques volatils.</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Demander une Consultation</a>
+                    </div>
+                    <div class="image-placeholder">VISUEL 4 : Produit principal en situation</div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>&copy; 2026 Lignum Steel. All rights reserved.</p>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Devenez Client Lignum Steel</h2>
+            <p>Nos produits sont des investissements. Contactez notre bureau de Genève pour une consultation sur mesure.</p>
+            <p style="margin-top: 20px; font-weight: 700;">contact@lignumsteel.ch | +41 22 123 45 67</p>
+        </div>
     </footer>
+
+    <script src="dist/main.js"></script>
 </body>
 </html>
