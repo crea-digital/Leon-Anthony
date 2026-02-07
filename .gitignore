@@ -1,20 +1,2 @@
-# Node.js
-
-# Logs
-logs
-*.log
-npm-debug.log*
-
-yarn-error.log*
-
-# Node Modules
-node_modules/
-
-# Build Output
-/dist
-/build
-
-# Various *env files
+/node_modules
 .env
-.env.test
-.env.local
