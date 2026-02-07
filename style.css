@@ -1,0 +1,123 @@
+/* Style pour le site de Lignum Steel */
+
+/* Polices et couleurs */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Section principale */
+main {
+    padding: 40px;
+}
+
+/* Section "hero" */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Section "philosophie" */
+#philosophie {
+    padding: 40px 0;
+}
+
+#philosophie h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.philosophie-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.philosophie-item {
+    width: 45%;
+}
+
+.philosophie-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Section "produits" */
+#produits {
+    padding: 40px 0;
+}
+
+#produits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.produit-info {
+    width: 60%;
+}
+
+.produit-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.produit-image {
+    width: 35%;
+    height: 200px; /* Placeholder */
+    background-color: #ccc; /* Placeholder */
+}
+
+/* Section "technique" */
+#technique {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
